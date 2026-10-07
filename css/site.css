@@ -1,0 +1,123 @@
+:root {
+    --primary: #6ca9d5;
+    --primary-light: #e3f3ff;
+    --text: #666;
+    --heading: #3d7fae;
+}
+
+body {
+    margin: 0;
+    font-family: Tahoma, Geneva, sans-serif;
+    color: var(--text);
+    background: #f4f7f9;
+    background-image: url('../images/BackgroundTile.jpg');
+    background-repeat: repeat;
+    background-position: top left;
+}
+/* Header */
+.site-header {
+}
+
+.site-title {
+    color: var(--primary);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+/* Banner */
+.site-banner {
+}
+
+.site-banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Navigation */
+.navbar-custom {
+    box-shadow: 0 2px 8px rgba(0,0,0,.04);
+}
+
+.navbar-custom .nav-link {
+    color: #545454;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .9rem;
+    text-transform: uppercase;
+    padding: .75rem 1rem;
+}
+
+.navbar-custom .nav-link:hover,
+.navbar-custom .nav-link.active {
+    color: #545454;
+    background: var(--primary-light);
+}
+
+/* Main content */
+.content-wrapper {
+    min-height: 400px;
+}
+
+.content-title {
+    color: var(--heading);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Existing home-page images */
+.home-gallery {
+    padding: 1rem 0;
+}
+
+.home-gallery .gallery-item {
+    display: block;
+    background: #fff;
+    padding: 4px;
+    border: 1px solid #e1e7eb;
+    border-radius: .35rem;
+    box-shadow: 0 2px 7px rgba(0,0,0,.06);
+    transition: transform .2s ease, box-shadow .2s ease;
+    height: 100%;
+}
+
+.home-gallery .gallery-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,.12);
+}
+
+.home-gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 3px solid #fff;
+}
+
+/* Keep the first three full-width like the original page */
+.featured-item {
+    width: 100%;
+}
+
+/* Footer */
+.site-footer {    
+    color: #666;
+    font-size: .8rem;
+}
+
+@media (max-width: 575.98px) {
+    .site-title {
+        font-size: 1.5rem;
+    }
+
+    .navbar-custom .nav-link {
+        padding: .65rem .75rem;
+    }
+}
+
+
+/* Common Image Class */
+.page-image {
+    max-width: 100%;
+    height: auto;
+    border: 4px solid white;
+}
